@@ -1,0 +1,12 @@
+birthday1 = input("Enter Birthday 1: ")
+birthday2 = input("Enter Birthday 2: ")
+birthday3 = input("Enter Birthday 3: ")
+birthday4 = input("Enter Birthday 4: ")
+birthday5 = input("Enter Birthday 5: ")
+
+print("\nEntered Birthdays:")
+print("Birthday 1:", birthday1)
+print("Birthday 2:", birthday2)
+print("Birthday 3:", birthday3)
+print("Birthday 4:", birthday4)
+print("Birthday 5:", birthday5)
