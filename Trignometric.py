@@ -1,10 +1,17 @@
 import math
 
-def trig_values():
-    n = int(input("Enter a value: "))
+x = float(input("Enter angle in degrees: "))
+x = x * math.pi / 180   
 
-    print("Sin =", math.sin(n))
-    print("Cos =", math.cos(n))
-    print("Tan =", math.tan(n))
+sin = 0
+cos = 0
 
-trig_values()
+for i in range(10):
+    sin += ((-1)**i * x**(2*i+1)) / math.factorial(2*i+1)
+    cos += ((-1)**i * x**(2*i)) / math.factorial(2*i)
+
+tan = sin / cos
+
+print("Sin =", sin)
+print("Cos =", cos)
+print("Tan =", tan)
