@@ -1,17 +1,12 @@
-import math
+import math 
+print('The Floor and Ceiling value of 23.56 are: ' + str(math.ceil(23.56)) + ', ' + str(math.floor(23.56)))
 
-x = float(input("Enter angle in degrees: "))
-x = x * math.pi / 180   
+x = 10
+y = -15
 
-sin = 0
-cos = 0
+print('The value of x after copying the sign from y is: ' + str(math.copysign(x, y)))
 
-for i in range(10):
-    sin += ((-1)**i * x**(2*i+1)) / math.factorial(2*i+1)
-    cos += ((-1)**i * x**(2*i)) / math.factorial(2*i)
 
-tan = sin / cos
+print('Absolute value of -96 and 56 are: ' + str(math.fabs(-96)) + ', ' + str(math.fabs(56)))
 
-print("Sin =", sin)
-print("Cos =", cos)
-print("Tan =", tan)
+print('The GCD of 24 and 56 : ' + str(math.gcd(24, 56)))
